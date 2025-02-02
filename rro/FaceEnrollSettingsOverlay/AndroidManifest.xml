@@ -18,6 +18,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
         package="com.android.settings"
         coreApp="true"
         android:sharedUserId="android.uid.system">
@@ -51,6 +52,7 @@
                   android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
                   android:exported="true"
                   android:screenOrientation="nosensor">
+                  tools:replace="android:screenOrientation">
             <intent-filter>
                 <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
